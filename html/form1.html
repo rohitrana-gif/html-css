@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- what is payload: payload is the data sent from the client to the server -->
+    <h1>this is a form</h1>
+   <div style="height: auto; width: 100%; background-color: lightgray; padding: 20px;">
+     <form action="submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="enter your name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="enter your email"><br><br>
+        <label for="password">passowrd:</label>
+        <input type="password" id="pass" >
+        <br>
+        <label for="phone no.">phone no.</label>
+        <input type="tel">
+        <br>
+        <label for="age">age:</label>
+        <input type="number" min="1" max="3">
+        <br>
+        <label for="gender">gender:</label>
+        <input type="radio" name="gender" >male
+        <input type="radio" name="gender" value="female">female
+        <input type="radio" name="gender" value="other">other
+        <br>
+        <label>upload death certifiacate:</label>
+        <input type="file" accept="application/pdf" >
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <label for="skills">skills:</label>
+        <input type="checkbox" >c++,
+        <input type="checkbox" >c,
+        <input type="checkbox" >c#,
+        <input type="checkbox" >js,
+        <input type="checkbox" >java
+        <br>
+        <label>experience</label>
+        <input type ="range" min="0" max="100">
+   </div>
+   <div>
+        <details>
+            <summary>click here to see more details</summary>
+            <p>this is the details section</p>
+        </details>
+        <details>
+            <summary>c++</summary>
+            <p>c++ is a programming language</p>
+        </details>
+   </div>
+</body>
+</html>

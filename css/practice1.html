@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    .parent{
+        background-color: blue;
+        height: 400px;
+        width: 400px;
+        color:white;
+        border: 2px solid black;
+    }
+    #child{
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+        margin: 50px;
+        padding: 50px;
+        border: 2px solid black;
+    }
+    #daddu{
+        background-color: rgb(255, 0, 255);
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        margin: 10px;
+    }
+    #grandchild{
+        background-color: rgb(255, 0, 0);
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        margin: 8px;
+    }
+</style>
+<body>
+    <div class="parent">
+        this is parent div
+        <div id="child">
+              <div id="daddu">
+                 <div id="grandchild"></div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

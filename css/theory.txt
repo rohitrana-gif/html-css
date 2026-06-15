@@ -1,0 +1,10 @@
+what is the css: casecading style sheet 
+use of css: to make the web pages attractive and stylish
+types of css: 1. inline css 2. internal css. 3. external css
+priority of tghe css:- high priority - inline css >> internal >> external [if important property is not applied]
+
+how to impliment the css ;
+inline css = inside the element
+internal css= inside the same html file within the style tag
+external css= in new file with extention of the {.css}
+

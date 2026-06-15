@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete HTML Form</title>
+</head>
+<body>
+
+  <h1>Student Registration Form</h1>
+
+  <form action="/submit" method="post" enctype="multipart/form-data">
+
+    <!-- Personal Information -->
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required minlength="3" maxlength="50">
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter email" required>
+      <br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+      <br><br>
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
+      <br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="60">
+      <br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+      <br><br>
+
+      <label for="website">Website:</label>
+      <input type="url" id="website" name="website" placeholder="https://example.com">
+      <br><br>
+
+      <label for="search">Search Course:</label>
+      <input type="search" id="search" name="search" placeholder="Search here">
+      <br><br>
+
+      <label for="favcolor">Favorite Color:</label>
+      <input type="color" id="favcolor" name="favcolor">
+      <br><br>
+
+      <label for="experience">Experience Level:</label>
+      <input type="range" id="experience" name="experience" min="0" max="10">
+      <br><br>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Gender -->
+    <fieldset>
+      <legend>Gender</legend>
+
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Skills -->
+    <fieldset>
+      <legend>Skills</legend>
+
+      <input type="checkbox" id="html" name="skills" value="HTML">
+      <label for="html">HTML</label>
+
+      <input type="checkbox" id="css" name="skills" value="CSS">
+      <label for="css">CSS</label>
+
+      <input type="checkbox" id="js" name="skills" value="JavaScript">
+      <label for="js">JavaScript</label>
+
+      <input type="checkbox" id="react" name="skills" value="React">
+      <label for="react">React</label>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Course Selection -->
+    <fieldset>
+      <legend>Course Details</legend>
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="">--Select Course--</option>
+        <option value="mern">MERN Stack</option>
+        <option value="java">Java Full Stack</option>
+        <option value="python">Python Full Stack</option>
+      </select>
+
+      <br><br>
+
+      <label for="batch">Select Batch Time:</label>
+      <select id="batch" name="batch">
+        <option value="morning">Morning</option>
+        <option value="evening">Evening</option>
+      </select>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Address -->
+    <fieldset>
+      <legend>Address Information</legend>
+
+      <label for="address">Address:</label>
+      <br>
+      <textarea id="address" name="address" rows="5" cols="40" placeholder="Enter your address"></textarea>
+
+    </fieldset>
+
+    <br>
+
+    <!-- File Upload -->
+    <fieldset>
+      <legend>Document Upload</legend>
+
+      <label for="photo">Upload Profile Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+
+      <br><br>
+
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+    </fieldset>
+
+    <br>
+
+    <!-- Readonly and Disabled -->
+    <fieldset>
+      <legend>Other Fields</legend>
+
+      <label for="studentid">Student ID:</label>
+      <input type="text" id="studentid" name="studentid" value="STU2026001" readonly>
+
+      <br><br>
+
+      <label for="center">Training Center:</label>
+      <input type="text" id="center" name="center" value="Main Campus" disabled>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Terms -->
+    <fieldset>
+      <legend>Declaration</legend>
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">
+        I confirm that all information provided is correct.
+      </label>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Buttons -->
+    <button type="submit">Submit Form</button>
+
+    <button type="reset">Reset Form</button>
+
+  </form>
+
+</body>
+</html>
