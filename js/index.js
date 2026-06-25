@@ -1,5 +1,5 @@
 // what is language?:language is the medium of communication
-// what is the token: tokens are the smallest unit of any programing language;
+// what is the token: tokens are the smallest unit of any          programing language;
 // keywaords:keywords are predfined words 
 // variables:variables are the container which used to store some value and variables are changable
 // constants:contants are the container but we cant chnage the value of the constants
